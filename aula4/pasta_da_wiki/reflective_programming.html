@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Reflective programming - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"ab941a07-1e84-4c8b-8011-92f62edd165c","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Reflective_programming","wgTitle":"Reflective programming","wgCurRevisionId":1053653034,"wgRevisionId":1053653034,"wgArticleId":314905,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Webarchive template wayback links","CS1 maint: uses authors parameter","All articles with unsourced statements","Articles with unsourced statements from July 2021","Articles with unsourced statements from July 2015","Articles needing additional references from January 2008",
+"All articles needing additional references","Articles with example Python (programming language) code","Programming constructs"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Reflective_programming","wgRelevantArticleId":314905,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{"status":{"levels":-1}}},"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgEditSubmitButtonLabelPublish":!0,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":!0,"wgCentralAuthMobileDomain":!1,"wgWikibaseItemId":"Q1056451",
+"wgGENewcomerTasksGuidanceEnabled":!0,"wgGEAskQuestionEnabled":!1,"wgGELinkRecommendationsFrontendEnabled":!1};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.pygments":"ready","skins.vector.styles.legacy":"ready","jquery.makeCollapsible.styles":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","skins.vector.legacy.js","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.extra-toolbar-buttons","ext.gadget.refToolbar","ext.gadget.switcher","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents",
+"ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.centralauth.centralautologin","ext.growthExperiments.SuggestedEditSession"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.38.0-wmf.7"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta property="og:title" content="Reflective programming - Wikipedia"/>
+<meta property="og:type" content="website"/>
+<link rel="preconnect" href="//upload.wikimedia.org"/>
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//en.m.wikipedia.org/wiki/Reflective_programming"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Reflective_programming&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Reflective_programming"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Reflective_programming rootpage-Reflective_programming skin-vector action-view skin-vector-legacy"><div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+	<div id="siteNotice"><!-- CentralNotice --></div>
+	<div class="mw-indicators">
+	</div>
+	<h1 id="firstHeading" class="firstHeading" >Reflective programming</h1>
+	<div id="bodyContent" class="vector-body">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		<div id="contentSub2"></div>
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="#searchInput">Jump to search</a>
+		<div id="mw-content-text" class="mw-body-content mw-content-ltr" lang="en" dir="ltr"><div class="mw-parser-output"><style data-mw-deduplicate="TemplateStyles:r1033289096">.mw-parser-output .hatnote{font-style:italic}.mw-parser-output div.hatnote{padding-left:1.6em;margin-bottom:0.5em}.mw-parser-output .hatnote i{font-style:normal}.mw-parser-output .hatnote+link+.hatnote{margin-top:-0.5em}</style><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <a href="/wiki/Reflection_(computer_graphics)" title="Reflection (computer graphics)">Reflection (computer graphics)</a>.</div>
+<style data-mw-deduplicate="TemplateStyles:r1045330069">.mw-parser-output .sidebar{width:22em;float:right;clear:right;margin:0.5em 0 1em 1em;background:#f8f9fa;border:1px solid #aaa;padding:0.2em;text-align:center;line-height:1.4em;font-size:88%;border-collapse:collapse;display:table}body.skin-minerva .mw-parser-output .sidebar{display:table!important;float:right!important;margin:0.5em 0 1em 1em!important}.mw-parser-output .sidebar-subgroup{width:100%;margin:0;border-spacing:0}.mw-parser-output .sidebar-left{float:left;clear:left;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-none{float:none;clear:both;margin:0.5em 1em 1em 0}.mw-parser-output .sidebar-outer-title{padding:0 0.4em 0.2em;font-size:125%;line-height:1.2em;font-weight:bold}.mw-parser-output .sidebar-top-image{padding:0.4em}.mw-parser-output .sidebar-top-caption,.mw-parser-output .sidebar-pretitle-with-top-image,.mw-parser-output .sidebar-caption{padding:0.2em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-pretitle{padding:0.4em 0.4em 0;line-height:1.2em}.mw-parser-output .sidebar-title,.mw-parser-output .sidebar-title-with-pretitle{padding:0.2em 0.8em;font-size:145%;line-height:1.2em}.mw-parser-output .sidebar-title-with-pretitle{padding:0.1em 0.4em}.mw-parser-output .sidebar-image{padding:0.2em 0.4em 0.4em}.mw-parser-output .sidebar-heading{padding:0.1em 0.4em}.mw-parser-output .sidebar-content{padding:0 0.5em 0.4em}.mw-parser-output .sidebar-content-with-subgroup{padding:0.1em 0.4em 0.2em}.mw-parser-output .sidebar-above,.mw-parser-output .sidebar-below{padding:0.3em 0.8em;font-weight:bold}.mw-parser-output .sidebar-collapse .sidebar-above,.mw-parser-output .sidebar-collapse .sidebar-below{border-top:1px solid #aaa;border-bottom:1px solid #aaa}.mw-parser-output .sidebar-navbar{text-align:right;font-size:115%;padding:0 0.4em 0.4em}.mw-parser-output .sidebar-list-title{padding:0 0.4em;text-align:left;font-weight:bold;line-height:1.6em;font-size:105%}.mw-parser-output .sidebar-list-title-c{padding:0 0.4em;text-align:center;margin:0 3.3em}@media(max-width:720px){body.mediawiki .mw-parser-output .sidebar{width:100%!important;clear:both;float:none!important;margin-left:0!important;margin-right:0!important}}</style><table class="sidebar nomobile nowraplinks"><tbody><tr><th class="sidebar-title"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Programming paradigms</a></th></tr><tr><td class="sidebar-content" style="text-align: left">
+<ul><li><a href="/wiki/Action_language" title="Action language">Action</a></li>
+<li><a href="/wiki/Agent-oriented_programming" title="Agent-oriented programming">Agent-oriented</a></li>
+<li><a href="/wiki/Array_programming" title="Array programming">Array-oriented</a></li>
+<li><a href="/wiki/Automata-based_programming" title="Automata-based programming">Automata-based</a></li>
+<li><a href="/wiki/Concurrent_computing" title="Concurrent computing">Concurrent computing</a>
+<ul><li><a href="/wiki/Relativistic_programming" title="Relativistic programming">Relativistic programming</a></li></ul></li>
+<li><a href="/wiki/Data-driven_programming" title="Data-driven programming">Data-driven</a></li>
+<li><a href="/wiki/Declarative_programming" title="Declarative programming">Declarative</a> (contrast: <a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a>)
+<ul><li><a href="/wiki/Functional_programming" title="Functional programming">Functional</a>
+<ul><li><a href="/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="/wiki/Purely_functional_programming" title="Purely functional programming">Purely functional</a></li></ul></li>
+<li><a href="/wiki/Logic_programming" title="Logic programming">Logic</a>
+<ul><li><a href="/wiki/Abductive_logic_programming" title="Abductive logic programming">Abductive logic</a></li>
+<li><a href="/wiki/Answer_set_programming" title="Answer set programming">Answer set</a></li>
+<li><a href="/wiki/Concurrent_logic_programming" title="Concurrent logic programming">Concurrent logic</a></li>
+<li><a href="/wiki/Functional_logic_programming" title="Functional logic programming">Functional logic</a></li>
+<li><a href="/wiki/Inductive_logic_programming" title="Inductive logic programming">Inductive logic</a></li></ul></li>
+<li><a href="/wiki/Constraint_programming" title="Constraint programming">Constraint</a>
+<ul><li><a href="/wiki/Constraint_logic_programming" title="Constraint logic programming">Constraint logic</a>
+<ul><li><a href="/wiki/Concurrent_constraint_logic_programming" title="Concurrent constraint logic programming">Concurrent constraint logic</a></li></ul></li></ul></li>
+<li><a href="/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a>
+<ul><li><a href="/wiki/Flow-based_programming" title="Flow-based programming">Flow-based</a></li>
+<li><a href="/wiki/Reactive_programming" title="Reactive programming">Reactive</a>
+<ul><li><a href="/wiki/Functional_reactive_programming" title="Functional reactive programming">Functional reactive</a></li></ul></li></ul></li>
+<li><a href="/wiki/Ontology_language" title="Ontology language">Ontology</a></li></ul></li>
+<li><a href="/wiki/Differentiable_programming" title="Differentiable programming">Differentiable</a></li>
+<li><a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">Dynamic/scripting</a></li>
+<li><a href="/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a></li>
+<li><a href="/wiki/Function-level_programming" title="Function-level programming">Function-level</a> (contrast: <a href="/wiki/Value-level_programming" title="Value-level programming">Value-level</a>)
+<ul><li><a href="/wiki/Tacit_programming" title="Tacit programming">Point-free style</a>
+<ul><li><a href="/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li></ul></li></ul></li>
+<li><a href="/wiki/Generic_programming" title="Generic programming">Generic</a></li>
+<li><a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a> (contrast: <a href="/wiki/Declarative_programming" title="Declarative programming">Declarative</a>)
+<ul><li><a href="/wiki/Procedural_programming" title="Procedural programming">Procedural</a></li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>
+<ul><li><a href="/wiki/Polymorphic_code" title="Polymorphic code">Polymorphic</a></li></ul></li></ul></li>
+<li><a href="/wiki/Intentional_programming" title="Intentional programming">Intentional</a></li>
+<li><a href="/wiki/Language-oriented_programming" title="Language-oriented programming">Language-oriented</a>
+<ul><li><a href="/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li></ul></li>
+<li><a href="/wiki/Literate_programming" title="Literate programming">Literate</a></li>
+<li><a href="/wiki/Natural-language_programming" title="Natural-language programming">Natural-language programming</a></li>
+<li><a href="/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a>
+<ul><li><a href="/wiki/Automatic_programming" title="Automatic programming">Automatic</a>
+<ul><li><a href="/wiki/Inductive_programming" title="Inductive programming">Inductive programming</a></li></ul></li>
+<li><a class="mw-selflink selflink">Reflective</a>
+<ul><li><a href="/wiki/Attribute-oriented_programming" title="Attribute-oriented programming">Attribute-oriented</a></li></ul></li>
+<li><a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">Macro</a></li>
+<li><a href="/wiki/Template_metaprogramming" title="Template metaprogramming">Template</a></li></ul></li>
+<li><a href="/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a> (contrast: <a href="/wiki/Structured_programming" title="Structured programming">Structured</a>)
+<ul><li><a href="/wiki/Array_programming" title="Array programming">Array</a></li></ul></li>
+<li><a href="/wiki/Nondeterministic_programming" title="Nondeterministic programming">Nondeterministic</a></li>
+<li><a href="/wiki/Parallel_computing" title="Parallel computing">Parallel computing</a>
+<ul><li><a href="/wiki/Process-oriented_programming" title="Process-oriented programming">Process-oriented</a></li></ul></li>
+<li><a href="/wiki/Probabilistic_programming" title="Probabilistic programming">Probabilistic</a></li>
+<li><a href="/wiki/Quantum_programming" title="Quantum programming">Quantum</a></li>
+<li><a href="/wiki/Set_theoretic_programming" title="Set theoretic programming">Set-theoretic</a></li>
+<li><a href="/wiki/Stack-oriented_programming" title="Stack-oriented programming">Stack-based</a></li>
+<li><a href="/wiki/Structured_programming" title="Structured programming">Structured</a> (contrast: <a href="/wiki/Non-structured_programming" title="Non-structured programming">Non-structured</a>)
+<ul><li><a href="/wiki/Block_(programming)" title="Block (programming)">Block-structured</a>
+<ul><li><a href="/wiki/Structured_concurrency" title="Structured concurrency">Structured concurrency</a></li></ul></li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a>
+<ul><li><a href="/wiki/Actor_model" title="Actor model">Actor-based</a></li>
+<li><a href="/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="/wiki/Concurrent_object-oriented_programming" title="Concurrent object-oriented programming">Concurrent</a></li>
+<li><a href="/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+<li>By <a href="/wiki/Separation_of_concerns" title="Separation of concerns">separation of concerns</a>:
+<ul><li><a href="/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="/wiki/Role-oriented_programming" title="Role-oriented programming">Role-oriented</a></li>
+<li><a href="/wiki/Subject-oriented_programming" title="Subject-oriented programming">Subject-oriented</a></li></ul></li></ul></li>
+<li><a href="/wiki/Recursion_(computer_science)" title="Recursion (computer science)">Recursive</a></li></ul></li>
+<li><a href="/wiki/Symbolic_programming" title="Symbolic programming">Symbolic</a></li>
+<li><a href="/wiki/Value-level_programming" title="Value-level programming">Value-level</a> (contrast: <a href="/wiki/Function-level_programming" title="Function-level programming">Function-level</a>)</li></ul></td>
+</tr><tr><td class="sidebar-navbar"><style data-mw-deduplicate="TemplateStyles:r1054937957">.mw-parser-output .navbar{display:inline;font-size:88%;font-weight:normal}.mw-parser-output .navbar-collapse{float:left;text-align:left}.mw-parser-output .navbar-boxtext{word-spacing:0}.mw-parser-output .navbar ul{display:inline-block;white-space:nowrap;line-height:inherit}.mw-parser-output .navbar-brackets::before{margin-right:-0.125em;content:"[ "}.mw-parser-output .navbar-brackets::after{margin-left:-0.125em;content:" ]"}.mw-parser-output .navbar li{word-spacing:-0.125em}.mw-parser-output .navbar a>span,.mw-parser-output .navbar a>abbr{text-decoration:inherit}.mw-parser-output .navbar-mini abbr{font-variant:small-caps;border-bottom:none;text-decoration:none;cursor:inherit}.mw-parser-output .navbar-ct-full{font-size:114%;margin:0 7em}.mw-parser-output .navbar-ct-mini{font-size:114%;margin:0 4em}.mw-parser-output .infobox .navbar{font-size:100%}.mw-parser-output .navbox .navbar{display:block;font-size:100%}.mw-parser-output .navbox-title .navbar{float:left;text-align:left;margin-right:0.5em}</style><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Programming_paradigms" title="Template:Programming paradigms"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Programming_paradigms" title="Template talk:Programming paradigms"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Programming_paradigms&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>In <a href="/wiki/Computer_science" title="Computer science">computer science</a>, <b>reflective programming</b> or <b>reflection</b> is the ability of a <a href="/wiki/Process_(computing)" title="Process (computing)">process</a> to examine, <a href="/wiki/Introspection_(computer_science)" class="mw-redirect" title="Introspection (computer science)">introspect</a>, and modify its own structure and behavior.<sup id="cite_ref-1" class="reference"><a href="#cite_note-1">&#91;1&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Historical_background"><span class="tocnumber">1</span> <span class="toctext">Historical background</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Uses"><span class="tocnumber">2</span> <span class="toctext">Uses</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Implementation"><span class="tocnumber">3</span> <span class="toctext">Implementation</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Security_considerations"><span class="tocnumber">4</span> <span class="toctext">Security considerations</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="#Examples"><span class="tocnumber">5</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-6"><a href="#C#"><span class="tocnumber">5.1</span> <span class="toctext">C#</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Delphi_/_Object_Pascal"><span class="tocnumber">5.2</span> <span class="toctext">Delphi / Object Pascal</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#eC"><span class="tocnumber">5.3</span> <span class="toctext">eC</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Go"><span class="tocnumber">5.4</span> <span class="toctext">Go</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Java"><span class="tocnumber">5.5</span> <span class="toctext">Java</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#JavaScript"><span class="tocnumber">5.6</span> <span class="toctext">JavaScript</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Julia"><span class="tocnumber">5.7</span> <span class="toctext">Julia</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Objective-C"><span class="tocnumber">5.8</span> <span class="toctext">Objective-C</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Perl"><span class="tocnumber">5.9</span> <span class="toctext">Perl</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#PHP"><span class="tocnumber">5.10</span> <span class="toctext">PHP</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Python"><span class="tocnumber">5.11</span> <span class="toctext">Python</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#R"><span class="tocnumber">5.12</span> <span class="toctext">R</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Ruby"><span class="tocnumber">5.13</span> <span class="toctext">Ruby</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Xojo"><span class="tocnumber">5.14</span> <span class="toctext">Xojo</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-20"><a href="#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="#Citations"><span class="tocnumber">7.1</span> <span class="toctext">Citations</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#Sources"><span class="tocnumber">7.2</span> <span class="toctext">Sources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-24"><a href="#Further_reading"><span class="tocnumber">8</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-25"><a href="#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Historical_background">Historical background</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=1" title="Edit section: Historical background">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The earliest computers were programmed in their native <a href="/wiki/Assembly_language" title="Assembly language">assembly languages</a>, which were inherently reflective<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2021)">citation needed</span></a></i>&#93;</sup>, as these original architectures could be programmed by defining instructions as data and using <a href="/wiki/Self-modifying_code" title="Self-modifying code">self-modifying code</a>. As the bulk of programming moved to higher-level <a href="/wiki/Compiled_languages" class="mw-redirect" title="Compiled languages">compiled languages</a> such as <a href="/wiki/ALGOL" title="ALGOL">Algol</a>, <a href="/wiki/Cobol" class="mw-redirect" title="Cobol">Cobol</a>, <a href="/wiki/Fortran" title="Fortran">Fortran</a>, <a href="/wiki/Pascal_(programming_language)" title="Pascal (programming language)">Pascal</a>, and <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a>, this reflective ability largely disappeared until new programming languages with reflection built into their type systems appeared.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (July 2015)">citation needed</span></a></i>&#93;</sup>
+</p><p><a href="/wiki/Brian_Cantwell_Smith" title="Brian Cantwell Smith">Brian Cantwell Smith</a>'s 1982 doctoral dissertation introduced the notion of computational reflection in procedural <a href="/wiki/Programming_languages" class="mw-redirect" title="Programming languages">programming languages</a> and the notion of the <a href="/wiki/Meta-circular_interpreter" class="mw-redirect" title="Meta-circular interpreter">meta-circular interpreter</a> as a component of <a href="/w/index.php?title=3-Lisp&amp;action=edit&amp;redlink=1" class="new" title="3-Lisp (page does not exist)">3-Lisp</a>.<sup id="cite_ref-2" class="reference"><a href="#cite_note-2">&#91;2&#93;</a></sup><sup id="cite_ref-3" class="reference"><a href="#cite_note-3">&#91;3&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Uses">Uses</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=2" title="Edit section: Uses">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Reflection helps programmers make generic software libraries to display data, process different formats of data, perform <a href="/wiki/Serialization" title="Serialization">serialization</a> or deserialization of data for communication, or do bundling and unbundling of data for containers or bursts of communication.
+</p><p>Effective use of reflection almost always requires a plan: A design framework, encoding description, object library, a map of a database or entity relations.
+</p><p>Reflection makes a language more suited to network-oriented code. For example, it assists languages such as <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> to operate well in networks by enabling libraries for serialization, bundling and varying data formats. Languages without reflection such as <a href="/wiki/C_(programming_language)" title="C (programming language)">C</a> are required to use auxiliary compilers for tasks like <a href="/wiki/Abstract_Syntax_Notation" class="mw-redirect" title="Abstract Syntax Notation">Abstract Syntax Notation</a> to produce code for serialization and bundling.
+</p><p>Reflection can be used for observing and modifying program execution at <a href="/wiki/Runtime_(program_lifecycle_phase)" title="Runtime (program lifecycle phase)">runtime</a>. A reflection-oriented program component can monitor the execution of an enclosure of code and can modify itself according to a desired goal of that enclosure. This is typically accomplished by dynamically assigning program code at runtime.
+</p><p>In <a href="/wiki/Object-oriented_programming" title="Object-oriented programming">object-oriented programming</a> languages such as <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, reflection allows <i>inspection</i> of classes, interfaces, fields and methods at runtime without knowing the names of the interfaces, fields, methods at compile time. It also allows <i>instantiation</i> of new objects and <i>invocation</i> of methods.
+</p><p>Reflection is often used as part of <a href="/wiki/Software_testing" title="Software testing">software testing</a>, such as for the runtime creation/instantiation of <a href="/wiki/Mock_object" title="Mock object">mock objects</a>.
+</p><p>Reflection is also a key strategy for <a href="/wiki/Metaprogramming" title="Metaprogramming">metaprogramming</a>.
+</p><p>In some object-oriented programming languages such as <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a> and <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>, reflection can be used to bypass <a href="/wiki/Member_accessibility" class="mw-redirect" title="Member accessibility">member accessibility</a> rules. For C#-properties this can be achieved by writing directly onto the (usually invisible) backing field of a non-public property. It is also possible to find non-public methods of classes and types and manually invoke them. This works for project-internal files as well as external libraries such as <a href="/wiki/.NET_Framework" title=".NET Framework">.NET</a>'s assemblies and Java's archives.
+</p>
+<h2><span class="mw-headline" id="Implementation">Implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=3" title="Edit section: Implementation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<table class="box-Unreferenced_section plainlinks metadata ambox ambox-content ambox-Unreferenced" role="presentation"><tbody><tr><td class="mbox-image"><div style="width:52px"><a href="/wiki/File:Question_book-new.svg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/50px-Question_book-new.svg.png" decoding="async" width="50" height="39" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/75px-Question_book-new.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/100px-Question_book-new.svg.png 2x" data-file-width="512" data-file-height="399" /></a></div></td><td class="mbox-text"><div class="mbox-text-span">This section <b>does not <a href="/wiki/Wikipedia:Citing_sources" title="Wikipedia:Citing sources">cite</a> any <a href="/wiki/Wikipedia:Verifiability" title="Wikipedia:Verifiability">sources</a></b>.<span class="hide-when-compact"> Please help <a class="external text" href="https://en.wikipedia.org/w/index.php?title=Reflective_programming&amp;action=edit">improve this section</a> by <a href="/wiki/Help:Referencing_for_beginners" title="Help:Referencing for beginners">adding citations to reliable sources</a>. Unsourced material may be challenged and <a href="/wiki/Wikipedia:Verifiability#Burden_of_evidence" title="Wikipedia:Verifiability">removed</a>.</span>  <span class="date-container"><i>(<span class="date">January 2008</span>)</i></span><span class="hide-when-compact"><i> (<a href="/wiki/Help:Maintenance_template_removal" title="Help:Maintenance template removal">Learn how and when to remove this template message</a>)</i></span></div></td></tr></tbody></table>
+<p>A language supporting reflection provides a number of features available at runtime that would otherwise be difficult to accomplish in a lower-level language. Some of these features are the abilities to:
+</p>
+<ul><li>Discover and modify <a href="/wiki/Source_code" title="Source code">source-code</a> constructions (such as code blocks, <a href="/wiki/Class_(computer_science)" class="mw-redirect" title="Class (computer science)">classes</a>, methods, protocols, etc.) as <a href="/wiki/First-class_object" class="mw-redirect" title="First-class object">first-class objects</a> at <a href="/wiki/Runtime_(program_lifecycle_phase)" title="Runtime (program lifecycle phase)">runtime</a>.</li>
+<li>Convert a <a href="/wiki/String_(computer_science)" title="String (computer science)">string</a> matching the symbolic name of a class or function into a reference to or invocation of that class or function.</li>
+<li>Evaluate a string as if it were a source-code statement at runtime.</li>
+<li>Create a new <a href="/wiki/Interpreter_(computing)" title="Interpreter (computing)">interpreter</a> for the language's <a href="/wiki/Bytecode" title="Bytecode">bytecode</a> to give a new meaning or purpose for a programming construct.</li></ul>
+<p>These features can be implemented in different ways. In <a href="/wiki/MOO_(programming_language)" class="mw-redirect" title="MOO (programming language)">MOO</a>, reflection forms a natural part of everyday programming idiom. When verbs (methods) are called, various variables such as <i>verb</i> (the name of the verb being called) and <i>this</i> (the object on which the verb is called) are populated to give the context of the call. Security is typically managed by accessing the caller stack programmatically: Since <i>callers</i>() is a list of the methods by which the current verb was eventually called, performing tests on <i>callers</i>()[0] (the command invoked by the original user) allows the verb to protect itself against unauthorised use.
+</p><p>Compiled languages rely on their runtime system to provide information about the source code. A compiled <a href="/wiki/Objective-C" title="Objective-C">Objective-C</a> executable, for example, records the names of all methods in a block of the executable, providing a table to correspond these with the underlying methods (or selectors for these methods) compiled into the program. In a compiled language that supports runtime creation of functions, such as <a href="/wiki/Common_Lisp" title="Common Lisp">Common Lisp</a>, the runtime environment must include a compiler or an interpreter.
+</p><p>Reflection can be implemented for languages without built-in reflection by using a <a href="/wiki/Program_transformation" title="Program transformation">program transformation</a> system to define automated source-code changes.
+</p>
+<h2><span class="mw-headline" id="Security_considerations">Security considerations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=4" title="Edit section: Security considerations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Reflection may allow a user to create unexpected <a href="/wiki/Control_flow" title="Control flow">control flow</a> paths through an application, potentially bypassing security measures. This may be exploited by attackers.<sup id="cite_ref-4" class="reference"><a href="#cite_note-4">&#91;4&#93;</a></sup> Historical <a href="/wiki/Vulnerability_(computing)" title="Vulnerability (computing)">vulnerabilities</a> in Java caused by unsafe reflection allowed code retrieved from potentially untrusted remote machines to break out of the Java <a href="/wiki/Sandbox_(computer_security)" title="Sandbox (computer security)">sandbox</a> security mechanism. A large scale study of 120 Java vulnerabilities in 2013 concluded that unsafe reflection is the most common vulnerability in Java, though not the most exploited.<sup id="cite_ref-5" class="reference"><a href="#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=5" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The following code snippets create an <a href="/wiki/Instance_(computer_science)" title="Instance (computer science)">instance</a> <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" id="" style="" dir="ltr">foo</code> of <a href="/wiki/Class_(computer_science)" class="mw-redirect" title="Class (computer science)">class</a> <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" id="" style="" dir="ltr">Foo</code> and invoke its <a href="/wiki/Method_(computer_science)" class="mw-redirect" title="Method (computer science)">method</a> <code class="mw-highlight mw-highlight-lang-text mw-content-ltr" id="" style="" dir="ltr">PrintHello</code>. For each <a href="/wiki/Programming_language" title="Programming language">programming language</a>, normal and reflection-based call sequences are shown.
+</p>
+<h3><span id="C.23"></span><span class="mw-headline" id="C#">C#</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=6" title="Edit section: C#">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/C_Sharp_(programming_language)" title="C Sharp (programming language)">C#</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-c# mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Without reflection</span>
+<span class="n">Foo</span> <span class="n">foo</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Foo</span><span class="p">();</span>
+<span class="n">foo</span><span class="p">.</span><span class="n">PrintHello</span><span class="p">();</span>
+
+<span class="c1">// With reflection</span>
+<span class="n">Object</span> <span class="n">foo</span> <span class="p">=</span> <span class="n">Activator</span><span class="p">.</span><span class="n">CreateInstance</span><span class="p">(</span><span class="s">&quot;complete.classpath.and.Foo&quot;</span><span class="p">);</span>
+<span class="n">MethodInfo</span> <span class="n">method</span> <span class="p">=</span> <span class="n">foo</span><span class="p">.</span><span class="n">GetType</span><span class="p">().</span><span class="n">GetMethod</span><span class="p">(</span><span class="s">&quot;PrintHello&quot;</span><span class="p">);</span>
+<span class="n">method</span><span class="p">.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">foo</span><span class="p">,</span> <span class="k">null</span><span class="p">);</span>
+</pre></div>
+<h3><span id="Delphi_.2F_Object_Pascal"></span><span class="mw-headline" id="Delphi_/_Object_Pascal">Delphi / Object Pascal</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=7" title="Edit section: Delphi / Object Pascal">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>This <a href="/wiki/Delphi_(programming_language)" class="mw-redirect" title="Delphi (programming language)">Delphi</a>/<a href="/wiki/Object_Pascal" title="Object Pascal">Object Pascal</a> example assumes that a <style data-mw-deduplicate="TemplateStyles:r886049734">.mw-parser-output .monospaced{font-family:monospace,monospace}</style><span class="monospaced">TFoo</span> class has been declared in a unit called <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">Unit1</span>:
+</p>
+<div class="mw-highlight mw-highlight-lang-delphi mw-content-ltr" dir="ltr"><pre><span></span><span class="k">uses</span> <span class="n">RTTI</span><span class="o">,</span> <span class="n">Unit1</span><span class="o">;</span>
+
+<span class="k">procedure</span> <span class="nf">WithoutReflection</span><span class="o">;</span>
+<span class="k">var</span>
+  <span class="n">Foo</span><span class="o">:</span> <span class="n">TFoo</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">Foo</span> <span class="o">:=</span> <span class="n">TFoo</span><span class="o">.</span><span class="n">Create</span><span class="o">;</span>
+  <span class="k">try</span>
+    <span class="n">Foo</span><span class="o">.</span><span class="n">Hello</span><span class="o">;</span>
+  <span class="k">finally</span>
+    <span class="n">Foo</span><span class="o">.</span><span class="n">Free</span><span class="o">;</span>
+  <span class="k">end</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+
+<span class="k">procedure</span> <span class="nf">WithReflection</span><span class="o">;</span>
+<span class="k">var</span>
+  <span class="n">RttiContext</span><span class="o">:</span> <span class="n">TRttiContext</span><span class="o">;</span>
+  <span class="n">RttiType</span><span class="o">:</span> <span class="n">TRttiInstanceType</span><span class="o">;</span>
+  <span class="n">Foo</span><span class="o">:</span> <span class="kt">TObject</span><span class="o">;</span>
+<span class="k">begin</span>
+  <span class="n">RttiType</span> <span class="o">:=</span> <span class="n">RttiContext</span><span class="o">.</span><span class="n">FindType</span><span class="p">(</span><span class="s">&#39;Unit1.TFoo&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">TRttiInstanceType</span><span class="o">;</span>
+  <span class="n">Foo</span> <span class="o">:=</span> <span class="n">RttiType</span><span class="o">.</span><span class="n">GetMethod</span><span class="p">(</span><span class="s">&#39;Create&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">RttiType</span><span class="o">.</span><span class="n">MetaclassType</span><span class="o">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">AsObject</span><span class="o">;</span>
+  <span class="k">try</span>
+    <span class="n">RttiType</span><span class="o">.</span><span class="n">GetMethod</span><span class="p">(</span><span class="s">&#39;Hello&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">Foo</span><span class="o">,</span> <span class="p">[])</span><span class="o">;</span>
+  <span class="k">finally</span>
+    <span class="n">Foo</span><span class="o">.</span><span class="n">Free</span><span class="o">;</span>
+  <span class="k">end</span><span class="o">;</span>
+<span class="k">end</span><span class="o">;</span>
+</pre></div>
+<h3><span class="mw-headline" id="eC">eC</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=8" title="Edit section: eC">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/EC_(programming_language)" title="EC (programming language)">eC</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-ec mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Without reflection</span>
+<span class="n">Foo</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="n">foo</span><span class="p">.</span><span class="n">hello</span><span class="p">();</span><span class="w"></span>
+
+<span class="c1">// With reflection</span>
+<span class="n">Class</span><span class="w"> </span><span class="n">fooClass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eSystem_FindClass</span><span class="p">(</span><span class="n">__thisModule</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;Foo&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="n">Instance</span><span class="w"> </span><span class="n">foo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eInstance_New</span><span class="p">(</span><span class="n">fooClass</span><span class="p">);</span><span class="w"></span>
+<span class="n">Method</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">eClass_FindMethod</span><span class="p">(</span><span class="n">fooClass</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">fooClass</span><span class="p">.</span><span class="n">module</span><span class="p">);</span><span class="w"></span>
+<span class="p">((</span><span class="kt">void</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="p">)())(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)</span><span class="n">m</span><span class="p">.</span><span class="n">function</span><span class="p">)(</span><span class="n">foo</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+<h3><span class="mw-headline" id="Go">Go</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=9" title="Edit section: Go">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/Go_(programming_language)" title="Go (programming language)">Go</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-go mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="s">&quot;reflect&quot;</span>
+
+<span class="c1">// Without reflection</span>
+<span class="nx">f</span> <span class="o">:=</span> <span class="nx">Foo</span><span class="p">{}</span>
+<span class="nx">f</span><span class="p">.</span><span class="nx">Hello</span><span class="p">()</span>
+
+<span class="c1">// With reflection</span>
+<span class="nx">fT</span> <span class="o">:=</span> <span class="nx">reflect</span><span class="p">.</span><span class="nx">TypeOf</span><span class="p">(</span><span class="nx">Foo</span><span class="p">{})</span>
+<span class="nx">fV</span> <span class="o">:=</span> <span class="nx">reflect</span><span class="p">.</span><span class="nx">New</span><span class="p">(</span><span class="nx">fT</span><span class="p">)</span>
+
+<span class="nx">m</span> <span class="o">:=</span> <span class="nx">fV</span><span class="p">.</span><span class="nx">MethodByName</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="nx">m</span><span class="p">.</span><span class="nx">IsValid</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">m</span><span class="p">.</span><span class="nx">Call</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+<h3><span class="mw-headline" id="Java">Java</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=10" title="Edit section: Java">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/Java_(programming_language)" title="Java (programming language)">Java</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-java mw-content-ltr" dir="ltr"><pre><span></span><span class="kn">import</span> <span class="nn">java.lang.reflect.Method</span><span class="p">;</span>
+
+<span class="c1">// Without reflection</span>
+<span class="n">Foo</span> <span class="n">foo</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Foo</span><span class="p">();</span>
+<span class="n">foo</span><span class="p">.</span><span class="na">hello</span><span class="p">();</span>
+
+<span class="c1">// With reflection</span>
+<span class="k">try</span> <span class="p">{</span>
+    <span class="n">Object</span> <span class="n">foo</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">.</span><span class="na">class</span><span class="p">.</span><span class="na">newInstance</span><span class="p">();</span>
+
+    <span class="n">Method</span> <span class="n">m</span> <span class="o">=</span> <span class="n">foo</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getDeclaredMethod</span><span class="p">(</span><span class="s">&quot;hello&quot;</span><span class="p">,</span> <span class="k">new</span> <span class="n">Class</span><span class="o">&lt;?&gt;[</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
+    <span class="n">m</span><span class="p">.</span><span class="na">invoke</span><span class="p">(</span><span class="n">foo</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">ReflectiveOperationException</span> <span class="n">ignored</span><span class="p">)</span> <span class="p">{}</span>
+</pre></div>
+<h3><span class="mw-headline" id="JavaScript">JavaScript</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=11" title="Edit section: JavaScript">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/JavaScript" title="JavaScript">JavaScript</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-javascript mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Without reflection</span>
+<span class="kd">const</span> <span class="nx">foo</span> <span class="o">=</span> <span class="ow">new</span> <span class="nx">Foo</span><span class="p">()</span>
+<span class="nx">foo</span><span class="p">.</span><span class="nx">hello</span><span class="p">()</span>
+
+<span class="c1">// With reflection</span>
+<span class="kd">const</span> <span class="nx">foo</span> <span class="o">=</span> <span class="nb">Reflect</span><span class="p">.</span><span class="nx">construct</span><span class="p">(</span><span class="nx">Foo</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">hello</span> <span class="o">=</span> <span class="nb">Reflect</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="nx">foo</span><span class="p">,</span> <span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<span class="nb">Reflect</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="nx">hello</span><span class="p">,</span> <span class="nx">foo</span><span class="p">,</span> <span class="p">[])</span>
+
+<span class="c1">// With eval</span>
+<span class="nb">eval</span><span class="p">(</span><span class="s1">&#39;new Foo().hello()&#39;</span><span class="p">)</span>
+</pre></div>
+<h3><span class="mw-headline" id="Julia">Julia</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=12" title="Edit section: Julia">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/Julia_(programming_language)" title="Julia (programming language)">Julia (programming language)</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-julia-repl mw-content-ltr" dir="ltr"><pre><span></span><span class="gp">julia&gt;</span> <span class="k">struct</span> <span class="kt">Point</span>
+           <span class="n">x</span><span class="o">::</span><span class="kt">Int</span>
+           <span class="n">y</span>
+       <span class="k">end</span>
+
+<span class="go"># Inspection with reflection</span>
+<span class="gp">julia&gt;</span> <span class="n">fieldnames</span><span class="p">(</span><span class="n">Point</span><span class="p">)</span>
+<span class="go">(:x, :y)</span>
+
+<span class="gp">julia&gt;</span> <span class="n">fieldtypes</span><span class="p">(</span><span class="n">Point</span><span class="p">)</span>
+<span class="go">(Int64, Any)</span>
+
+<span class="gp">julia&gt;</span> <span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="go"># Access with reflection</span>
+<span class="gp">julia&gt;</span> <span class="n">getfield</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="ss">:x</span><span class="p">)</span>
+<span class="go">3</span>
+</pre></div>
+<h3><span class="mw-headline" id="Objective-C">Objective-C</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=13" title="Edit section: Objective-C">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/Objective-C" title="Objective-C">Objective-C</a>, implying either the <a href="/wiki/OpenStep" title="OpenStep">OpenStep</a> or <a href="/wiki/Foundation_Kit" title="Foundation Kit">Foundation Kit</a> framework is used:
+</p>
+<div class="mw-highlight mw-highlight-lang-objc mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Foo class.</span>
+<span class="k">@interface</span> <span class="nc">Foo</span>&#160;: <span class="bp">NSObject</span><span class="w"></span>
+<span class="p">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">hello</span><span class="p">;</span><span class="w"></span>
+<span class="k">@end</span><span class="w"></span>
+
+<span class="c1">// Sending &quot;hello&quot; to a Foo instance without reflection.</span>
+<span class="n">Foo</span><span class="w"> </span><span class="o">*</span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[[</span><span class="n">Foo</span><span class="w"> </span><span class="n">alloc</span><span class="p">]</span><span class="w"> </span><span class="n">init</span><span class="p">];</span><span class="w"></span>
+<span class="p">[</span><span class="n">obj</span><span class="w"> </span><span class="n">hello</span><span class="p">];</span><span class="w"></span>
+
+<span class="c1">// Sending &quot;hello&quot; to a Foo instance with reflection.</span>
+<span class="kt">id</span><span class="w"> </span><span class="n">obj</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[[</span><span class="n">NSClassFromString</span><span class="p">(</span><span class="s">@&quot;Foo&quot;</span><span class="p">)</span><span class="w"> </span><span class="n">alloc</span><span class="p">]</span><span class="w"> </span><span class="n">init</span><span class="p">];</span><span class="w"></span>
+<span class="p">[</span><span class="n">obj</span><span class="w"> </span><span class="nl">performSelector</span><span class="p">:</span><span class="w"> </span><span class="k">@selector</span><span class="p">(</span><span class="n">hello</span><span class="p">)];</span><span class="w"></span>
+</pre></div>
+<h3><span class="mw-headline" id="Perl">Perl</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=14" title="Edit section: Perl">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/Perl_(programming_language)" class="mw-redirect" title="Perl (programming language)">Perl</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-perl mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Without reflection</span>
+<span class="k">my</span> <span class="nv">$foo</span> <span class="o">=</span> <span class="nn">Foo</span><span class="o">-&gt;</span><span class="k">new</span><span class="p">;</span>
+<span class="nv">$foo</span><span class="o">-&gt;</span><span class="n">hello</span><span class="p">;</span>
+
+<span class="c1"># or</span>
+<span class="nn">Foo</span><span class="o">-&gt;</span><span class="k">new</span><span class="o">-&gt;</span><span class="n">hello</span><span class="p">;</span>
+
+<span class="c1"># With reflection</span>
+<span class="k">my</span> <span class="nv">$class</span> <span class="o">=</span> <span class="s">&quot;Foo&quot;</span>
+<span class="k">my</span> <span class="nv">$constructor</span> <span class="o">=</span> <span class="s">&quot;new&quot;</span><span class="p">;</span>
+<span class="k">my</span> <span class="nv">$method</span> <span class="o">=</span> <span class="s">&quot;hello&quot;</span><span class="p">;</span>
+
+<span class="k">my</span> <span class="nv">$f</span> <span class="o">=</span> <span class="nv">$class</span><span class="o">-&gt;</span><span class="nv">$constructor</span><span class="p">;</span>
+<span class="nv">$f</span><span class="o">-&gt;</span><span class="nv">$method</span><span class="p">;</span>
+
+<span class="c1"># or</span>
+<span class="nv">$class</span><span class="o">-&gt;</span><span class="nv">$constructor</span><span class="o">-&gt;</span><span class="nv">$method</span><span class="p">;</span>
+
+<span class="c1"># with eval</span>
+<span class="nb">eval</span> <span class="s">&quot;new Foo-&gt;hello;&quot;</span><span class="p">;</span>
+</pre></div>
+<h3><span class="mw-headline" id="PHP">PHP</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=15" title="Edit section: PHP">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/PHP" title="PHP">PHP</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-php mw-content-ltr" dir="ltr"><pre><span></span><span class="c1">// Without reflection</span>
+<span class="nv">$foo</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Foo</span><span class="p">();</span>
+<span class="nv">$foo</span><span class="o">-&gt;</span><span class="na">hello</span><span class="p">();</span>
+
+<span class="c1">// With reflection, using Reflections API</span>
+<span class="nv">$reflector</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ReflectionClass</span><span class="p">(</span><span class="s1">&#39;Foo&#39;</span><span class="p">);</span>
+<span class="nv">$foo</span> <span class="o">=</span> <span class="nv">$reflector</span><span class="o">-&gt;</span><span class="na">newInstance</span><span class="p">();</span>
+<span class="nv">$hello</span> <span class="o">=</span> <span class="nv">$reflector</span><span class="o">-&gt;</span><span class="na">getMethod</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">);</span>
+<span class="nv">$hello</span><span class="o">-&gt;</span><span class="na">invoke</span><span class="p">(</span><span class="nv">$foo</span><span class="p">);</span>
+</pre></div>
+<h3><span class="mw-headline" id="Python">Python</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=16" title="Edit section: Python">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/Python_(programming_language)" title="Python (programming language)">Python</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-python mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Without reflection</span>
+<span class="n">obj</span> <span class="o">=</span> <span class="n">Foo</span><span class="p">()</span>
+<span class="n">obj</span><span class="o">.</span><span class="n">hello</span><span class="p">()</span>
+
+<span class="c1"># With reflection</span>
+<span class="n">obj</span> <span class="o">=</span> <span class="nb">globals</span><span class="p">()[</span><span class="s2">&quot;Foo&quot;</span><span class="p">]()</span>
+<span class="nb">getattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s2">&quot;hello&quot;</span><span class="p">)()</span>
+
+<span class="c1"># With eval</span>
+<span class="nb">eval</span><span class="p">(</span><span class="s2">&quot;Foo().hello()&quot;</span><span class="p">)</span>
+</pre></div>
+<h3><span class="mw-headline" id="R">R</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=17" title="Edit section: R">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/R_(programming_language)" title="R (programming language)">R</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-splus mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Without reflection, assuming foo() returns an S3-type object that has method &quot;hello&quot;</span>
+<span class="n">obj</span> <span class="o">&lt;-</span> <span class="nf">foo</span><span class="p">()</span>
+<span class="nf">hello</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span>
+
+<span class="c1"># With reflection</span>
+<span class="n">class_name</span> <span class="o">&lt;-</span> <span class="s">&quot;foo&quot;</span>
+<span class="n">generic_having_foo_method</span> <span class="o">&lt;-</span> <span class="s">&quot;hello&quot;</span>
+<span class="n">obj</span> <span class="o">&lt;-</span> <span class="nf">do.call</span><span class="p">(</span><span class="n">class_name</span><span class="p">,</span> <span class="nf">list</span><span class="p">())</span>
+<span class="nf">do.call</span><span class="p">(</span><span class="n">generic_having_foo_method</span><span class="p">,</span> <span class="nf">alist</span><span class="p">(</span><span class="n">obj</span><span class="p">))</span>
+</pre></div>
+<h3><span class="mw-headline" id="Ruby">Ruby</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=18" title="Edit section: Ruby">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example in <a href="/wiki/Ruby_(Programming_Language)" class="mw-redirect" title="Ruby (Programming Language)">Ruby</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-ruby mw-content-ltr" dir="ltr"><pre><span></span><span class="c1"># Without reflection</span>
+<span class="n">obj</span> <span class="o">=</span> <span class="no">Foo</span><span class="o">.</span><span class="n">new</span>
+<span class="n">obj</span><span class="o">.</span><span class="n">hello</span>
+
+<span class="c1"># With reflection</span>
+<span class="n">class_name</span> <span class="o">=</span> <span class="s2">&quot;Foo&quot;</span>
+<span class="n">method_name</span> <span class="o">=</span> <span class="ss">:hello</span>
+<span class="n">obj</span> <span class="o">=</span> <span class="no">Object</span><span class="o">.</span><span class="n">const_get</span><span class="p">(</span><span class="n">class_name</span><span class="p">)</span><span class="o">.</span><span class="n">new</span>
+<span class="n">obj</span><span class="o">.</span><span class="n">send</span> <span class="n">method_name</span>
+
+<span class="c1"># With eval</span>
+<span class="nb">eval</span> <span class="s2">&quot;Foo.new.hello&quot;</span>
+</pre></div>
+<h3><span class="mw-headline" id="Xojo">Xojo</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=19" title="Edit section: Xojo">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The following is an example using <a href="/wiki/Xojo" title="Xojo">Xojo</a>:
+</p>
+<div class="mw-highlight mw-highlight-lang-vbnet mw-content-ltr" dir="ltr"><pre><span></span><span class="c">&#39; Without reflection</span>
+<span class="k">Dim</span> <span class="n">fooInstance</span> <span class="ow">As</span> <span class="k">New</span> <span class="n">Foo</span>
+<span class="n">fooInstance</span><span class="p">.</span><span class="n">PrintHello</span>
+
+<span class="c">&#39; With reflection</span>
+<span class="k">Dim</span> <span class="n">classInfo</span> <span class="ow">As</span> <span class="n">Introspection</span><span class="p">.</span><span class="n">Typeinfo</span> <span class="o">=</span> <span class="n">GetTypeInfo</span><span class="p">(</span><span class="n">Foo</span><span class="p">)</span>
+<span class="k">Dim</span> <span class="n">constructors</span><span class="p">()</span> <span class="ow">As</span> <span class="n">Introspection</span><span class="p">.</span><span class="n">ConstructorInfo</span> <span class="o">=</span> <span class="n">classInfo</span><span class="p">.</span><span class="n">GetConstructors</span>
+<span class="k">Dim</span> <span class="n">fooInstance</span> <span class="ow">As</span> <span class="n">Foo</span> <span class="o">=</span> <span class="n">constructors</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="n">Invoke</span>
+<span class="k">Dim</span> <span class="n">methods</span><span class="p">()</span> <span class="ow">As</span> <span class="n">Introspection</span><span class="p">.</span><span class="n">MethodInfo</span> <span class="o">=</span> <span class="n">classInfo</span><span class="p">.</span><span class="n">GetMethods</span>
+<span class="k">For</span> <span class="k">Each</span> <span class="n">m</span> <span class="ow">As</span> <span class="n">Introspection</span><span class="p">.</span><span class="n">MethodInfo</span> <span class="ow">In</span> <span class="n">methods</span>
+  <span class="k">If</span> <span class="n">m</span><span class="p">.</span><span class="n">Name</span> <span class="o">=</span> <span class="s">&quot;PrintHello&quot;</span> <span class="k">Then</span>
+    <span class="n">m</span><span class="p">.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">fooInstance</span><span class="p">)</span>
+  <span class="k">End</span> <span class="k">If</span>
+<span class="k">Next</span>
+</pre></div>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=20" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="/wiki/List_of_reflective_programming_languages_and_platforms" title="List of reflective programming languages and platforms">List of reflective programming languages and platforms</a></li>
+<li><a href="/wiki/Mirror_(programming)" title="Mirror (programming)">Mirror (programming)</a></li>
+<li><a href="/wiki/Programming_paradigm" title="Programming paradigm">Programming paradigms</a></li>
+<li><a href="/wiki/Self-hosting_(compilers)" title="Self-hosting (compilers)">Self-hosting (compilers)</a></li>
+<li><a href="/wiki/Self-modifying_code" title="Self-modifying code">Self-modifying code</a></li>
+<li><a href="/wiki/Type_introspection" title="Type introspection">Type introspection</a></li>
+<li><a href="/wiki/Typeof" title="Typeof">typeof</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=21" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Citations">Citations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=22" title="Edit section: Citations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<style data-mw-deduplicate="TemplateStyles:r1011085734">.mw-parser-output .reflist{font-size:90%;margin-bottom:0.5em;list-style-type:decimal}.mw-parser-output .reflist .references{font-size:100%;margin-bottom:0;list-style-type:inherit}.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}.mw-parser-output .reflist-columns{margin-top:0.3em}.mw-parser-output .reflist-columns ol{margin-top:0}.mw-parser-output .reflist-columns li{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .reflist-upper-alpha{list-style-type:upper-alpha}.mw-parser-output .reflist-upper-roman{list-style-type:upper-roman}.mw-parser-output .reflist-lower-alpha{list-style-type:lower-alpha}.mw-parser-output .reflist-lower-greek{list-style-type:lower-greek}.mw-parser-output .reflist-lower-roman{list-style-type:lower-roman}</style><div class="reflist">
+<div class="mw-references-wrap"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><style data-mw-deduplicate="TemplateStyles:r999302996">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background:linear-gradient(transparent,transparent),url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style><cite class="citation cs2"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20170821214626/http://www2.parc.com/csl/groups/sda/projects/reflection96/docs/malenfant/malenfant.pdf"><i>A Tutorial on Behavioral Reflection and its Implementation by Jacques Malenfant et al.</i></a> <span class="cs1-format">(PDF)</span>, unknown, archived from <a rel="nofollow" class="external text" href="http://www2.parc.com/csl/groups/sda/projects/reflection96/docs/malenfant/malenfant.pdf">the original</a> <span class="cs1-format">(PDF)</span> on 21 August 2017<span class="reference-accessdate">, retrieved <span class="nowrap">23 June</span> 2019</span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=A+Tutorial+on+Behavioral+Reflection+and+its+Implementation+by+Jacques+Malenfant+et+al.&amp;rft.pub=unknown&amp;rft_id=http%3A%2F%2Fwww2.parc.com%2Fcsl%2Fgroups%2Fsda%2Fprojects%2Freflection96%2Fdocs%2Fmalenfant%2Fmalenfant.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReflective+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="#cite_ref-2">^</a></b></span> <span class="reference-text">Brian Cantwell Smith, <a rel="nofollow" class="external text" href="http://hdl.handle.net/1721.1/15961">Procedural Reflection in Programming Languages</a>, Department of Electrical Engineering and Computer Science, Massachusetts Institute of Technology, PhD dissertation, 1982.</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="#cite_ref-3">^</a></b></span> <span class="reference-text">Brian C. Smith. <a rel="nofollow" class="external text" href="http://publications.csail.mit.edu/lcs/specpub.php?id=840">Reflection and semantics in a procedural language</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20151213034343/http://publications.csail.mit.edu/lcs/specpub.php?id=840">Archived</a> 2015-12-13 at the <a href="/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>. Technical Report MIT-LCS-TR-272, Massachusetts Institute of Technology, Cambridge, Massachusetts, January 1982.</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="#cite_ref-4">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite id="CITEREFBarrosJustMillsteinVines2015" class="citation report cs1">Barros, Paulo; Just, René; Millstein, Suzanne; Vines, Paul; Dietl, Werner; d'Amorim, Marcelo; Ernst, Michael D. (August 2015). <a rel="nofollow" class="external text" href="https://homes.cs.washington.edu/~mernst/pubs/implicit-control-flow-tr150801.pdf">Static Analysis of Implicit Control Flow: Resolving Java Reflection and Android Intents</a> <span class="cs1-format">(PDF)</span> (Report). University of Washington. UW-CSE-15-08-01<span class="reference-accessdate">. Retrieved <span class="nowrap">October 7,</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=report&amp;rft.btitle=Static+Analysis+of+Implicit+Control+Flow%3A+Resolving+Java+Reflection+and+Android+Intents&amp;rft.pub=University+of+Washington&amp;rft.date=2015-08&amp;rft.aulast=Barros&amp;rft.aufirst=Paulo&amp;rft.au=Just%2C+Ren%C3%A9&amp;rft.au=Millstein%2C+Suzanne&amp;rft.au=Vines%2C+Paul&amp;rft.au=Dietl%2C+Werner&amp;rft.au=d%27Amorim%2C+Marcelo&amp;rft.au=Ernst%2C+Michael+D.&amp;rft_id=https%3A%2F%2Fhomes.cs.washington.edu%2F~mernst%2Fpubs%2Fimplicit-control-flow-tr150801.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReflective+programming" class="Z3988"></span></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="#cite_ref-5">^</a></b></span> <span class="reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><cite class="citation magazine cs1">Eauvidoum, Ieu; disk noise (October 5, 2021). <a rel="nofollow" class="external text" href="http://phrack.org/issues/70/7.html#article">"Twenty years of Escaping the Java Sandbox"</a>. <i><a href="/wiki/Phrack" title="Phrack">Phrack</a></i>. Vol.&#160;10 no.&#160;46<span class="reference-accessdate">. Retrieved <span class="nowrap">October 7,</span> 2021</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Phrack&amp;rft.atitle=Twenty+years+of+Escaping+the+Java+Sandbox&amp;rft.volume=10&amp;rft.issue=46&amp;rft.date=2021-10-05&amp;rft_id=http%3A%2F%2Fphrack.org%2Fissues%2F70%2F7.html%23article&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReflective+programming" class="Z3988"></span><span class="cs1-maint citation-comment">CS1 maint: uses authors parameter (<a href="/wiki/Category:CS1_maint:_uses_authors_parameter" title="Category:CS1 maint: uses authors parameter">link</a>)</span></span>
+</li>
+</ol></div></div>
+<h3><span class="mw-headline" id="Sources">Sources</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=23" title="Edit section: Sources">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<style data-mw-deduplicate="TemplateStyles:r1054258005">.mw-parser-output .refbegin{font-size:90%;margin-bottom:0.5em}.mw-parser-output .refbegin-hanging-indents>ul{margin-left:0}.mw-parser-output .refbegin-hanging-indents>ul>li{margin-left:0;padding-left:3.2em;text-indent:-3.2em}.mw-parser-output .refbegin-hanging-indents ul,.mw-parser-output .refbegin-hanging-indents ul li{list-style:none}@media(max-width:720px){.mw-parser-output .refbegin-hanging-indents>ul>li{padding-left:1.6em;text-indent:-1.6em}}.mw-parser-output .refbegin-columns{margin-top:0.3em}.mw-parser-output .refbegin-columns ul{margin-top:0}.mw-parser-output .refbegin-columns li{page-break-inside:avoid;break-inside:avoid-column}</style><div class="refbegin" style="">
+<ul><li>Jonathan M. Sobel and Daniel P. Friedman. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20100204091328/http://www.cs.indiana.edu/~jsobel/rop.html"><i>An Introduction to Reflection-Oriented Programming</i></a> (1996), <a href="/wiki/Indiana_University" title="Indiana University">Indiana University</a>.</li>
+<li><a rel="nofollow" class="external text" href="https://www.codeproject.com/Articles/674455/Anti-Reflector-NET-Code-Protection">Anti-Reflection technique using C# and C++/CLI wrapper to prevent code thief</a></li></ul>
+</div>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=24" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>Ira R. Forman and Nate Forman, <i>Java Reflection in Action</i> (2005), <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/1-932394-18-4" title="Special:BookSources/1-932394-18-4">1-932394-18-4</a></li>
+<li>Ira R. Forman and Scott Danforth, <i>Putting Metaclasses to Work</i> (1999), <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r999302996"/><a href="/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="/wiki/Special:BookSources/0-201-43305-2" title="Special:BookSources/0-201-43305-2">0-201-43305-2</a></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Reflective_programming&amp;action=edit&amp;section=25" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://www-master.ufr-info-p6.jussieu.fr/2007/Ajouts/Master_esj20_2007_2008/IMG/pdf/malenfant-ijcai95.pdf">Reflection in logic, functional and object-oriented programming: a short comparative study</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20100204091328/http://www.cs.indiana.edu/~jsobel/rop.html">An Introduction to Reflection-Oriented Programming</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.laputan.org/#Reflection">Brian Foote's pages on Reflection in Smalltalk</a></li>
+<li><a rel="nofollow" class="external text" href="http://docs.oracle.com/javase/tutorial/reflect/index.html">Java Reflection API Tutorial</a> from Oracle</li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Types_of_programming_languages" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1054937957"/><div class="navbar plainlinks hlist navbar-mini"><ul><li class="nv-view"><a href="/wiki/Template:Types_of_programming_languages" title="Template:Types of programming languages"><abbr title="View this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">v</abbr></a></li><li class="nv-talk"><a href="/wiki/Template_talk:Types_of_programming_languages" title="Template talk:Types of programming languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Types_of_programming_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;box-shadow:none;padding:0;">e</abbr></a></li></ul></div><div id="Types_of_programming_languages" style="font-size:114%;margin:0 4em"><a href="/wiki/Programming_paradigm" title="Programming paradigm">Types of programming languages</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Paradigm</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Actor_model" title="Actor model">Actor-based</a></li>
+<li><a href="/wiki/Array_programming" title="Array programming">Array</a></li>
+<li><a href="/wiki/Aspect-oriented_programming" title="Aspect-oriented programming">Aspect-oriented</a></li>
+<li><a href="/wiki/Class-based_programming" title="Class-based programming">Class-based</a></li>
+<li><a href="/wiki/Concatenative_programming_language" title="Concatenative programming language">Concatenative</a></li>
+<li><a href="/wiki/Concurrent_computing" title="Concurrent computing">Concurrent</a></li>
+<li><a href="/wiki/Dataflow_programming" title="Dataflow programming">Dataflow</a></li>
+<li><a href="/wiki/Declarative_programming" title="Declarative programming">Declarative</a></li>
+<li><a href="/wiki/Differentiable_programming" title="Differentiable programming">Differentiable</a></li>
+<li><a href="/wiki/Domain-specific_language" title="Domain-specific language">Domain-specific</a></li>
+<li><a href="/wiki/Dynamic_programming_language" title="Dynamic programming language">Dynamic</a></li>
+<li><a href="/wiki/Esoteric_programming_language" title="Esoteric programming language">Esoteric</a></li>
+<li><a href="/wiki/Event-driven_programming" title="Event-driven programming">Event-driven</a></li>
+<li><a href="/wiki/Extensible_programming" title="Extensible programming">Extensible</a></li>
+<li><a href="/wiki/Functional_programming" title="Functional programming">Functional</a></li>
+<li><a href="/wiki/Imperative_programming" title="Imperative programming">Imperative</a></li>
+<li><a href="/wiki/Logic_programming" title="Logic programming">Logic</a></li>
+<li><a href="/wiki/Macro_(computer_science)" title="Macro (computer science)">Macro</a></li>
+<li><a href="/wiki/Metaprogramming" title="Metaprogramming">Metaprogramming</a></li>
+<li><a href="/wiki/Object-based_language" title="Object-based language">Object-based</a></li>
+<li><a href="/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented</a></li>
+<li><a href="/wiki/Pipeline_(software)" title="Pipeline (software)">Pipeline</a></li>
+<li><a href="/wiki/Procedural_programming" title="Procedural programming">Procedural</a></li>
+<li><a href="/wiki/Prototype-based_programming" title="Prototype-based programming">Prototype-based</a></li>
+<li><a class="mw-selflink selflink">Reflective</a></li>
+<li><a href="/wiki/Rule-based_system" title="Rule-based system">Rule-based</a></li>
+<li><a href="/wiki/Scripting_language" title="Scripting language">Scripting</a></li>
+<li><a href="/wiki/Stack-oriented_programming" title="Stack-oriented programming">Stack-oriented</a></li>
+<li><a href="/wiki/Synchronous_programming_language" title="Synchronous programming language">Synchronous</a></li>
+<li><a href="/wiki/Tactile_programming_language" title="Tactile programming language">Tactile</a></li>
+<li><a href="/wiki/Template_processor" title="Template processor">Template</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Level</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Assembly_language" title="Assembly language">Assembly</a></li>
+<li><a href="/wiki/Compiled_language" title="Compiled language">Compiled</a></li>
+<li><a href="/wiki/Interpreted_language" class="mw-redirect" title="Interpreted language">Interpreted</a></li>
+<li><a href="/wiki/Machine_code" title="Machine code">Machine</a></li></ul>
+<ul><li><a href="/wiki/Low-level_programming_language" title="Low-level programming language">Low-level</a></li>
+<li><a href="/wiki/High-level_programming_language" title="High-level programming language">High-level</a></li>
+<li><a href="/wiki/Very_high-level_programming_language" title="Very high-level programming language">Very high-level</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Generation</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/First-generation_programming_language" title="First-generation programming language">First</a></li>
+<li><a href="/wiki/Second-generation_programming_language" title="Second-generation programming language">Second</a></li>
+<li><a href="/wiki/Third-generation_programming_language" title="Third-generation programming language">Third</a></li>
+<li><a href="/wiki/Fourth-generation_programming_language" title="Fourth-generation programming language">Fourth</a></li>
+<li><a href="/wiki/Fifth-generation_programming_language" title="Fifth-generation programming language">Fifth</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="/wiki/Non-English-based_programming_languages" title="Non-English-based programming languages">Non-English-based</a></li>
+<li><a href="/wiki/Visual_programming_language" title="Visual programming language">Visual</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1328
+Cached time: 20211118204054
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.529 seconds
+Real time usage: 1.895 seconds
+Preprocessor visited node count: 1653/1000000
+Post‐expand include size: 46370/2097152 bytes
+Template argument size: 2489/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 45988/5000000 bytes
+Lua time usage: 0.239/10.000 seconds
+Lua memory usage: 4804916/52428800 bytes
+Number of Wikibase entities loaded: 0/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1770.620      1 -total
+  8.83%  156.379      1 Template:Reflist
+  6.08%  107.635      1 Template:Citation
+  4.42%   78.180      1 Template:Programming_paradigms
+  4.30%   76.218      2 Template:Citation_needed
+  4.23%   74.918      1 Template:Sidebar
+  3.51%   62.140      2 Template:ISBN
+  3.37%   59.696      2 Template:Fix
+  2.73%   48.412      1 Template:Distinguish
+  1.97%   34.815      4 Template:Category_handler
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:314905-0!canonical and timestamp 20211118204052 and revision id 1053653034. Serialized with JSON.
+ -->
+</div><noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Reflective_programming&amp;oldid=1053653034">https://en.wikipedia.org/w/index.php?title=Reflective_programming&amp;oldid=1053653034</a>"</div></div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Programming_constructs" title="Category:Programming constructs">Programming constructs</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="/wiki/Category:CS1_maint:_uses_authors_parameter" title="Category:CS1 maint: uses authors parameter">CS1 maint: uses authors parameter</a></li><li><a href="/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2021" title="Category:Articles with unsourced statements from July 2021">Articles with unsourced statements from July 2021</a></li><li><a href="/wiki/Category:Articles_with_unsourced_statements_from_July_2015" title="Category:Articles with unsourced statements from July 2015">Articles with unsourced statements from July 2015</a></li><li><a href="/wiki/Category:Articles_needing_additional_references_from_January_2008" title="Category:Articles needing additional references from January 2008">Articles needing additional references from January 2008</a></li><li><a href="/wiki/Category:All_articles_needing_additional_references" title="Category:All articles needing additional references">All articles needing additional references</a></li><li><a href="/wiki/Category:Articles_with_example_Python_(programming_language)_code" title="Category:Articles with example Python (programming language) code">Articles with example Python (programming language) code</a></li></ul></div></div>
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		<nav id="p-personal" class="mw-portlet mw-portlet-personal vector-user-menu-legacy vector-menu" aria-labelledby="p-personal-label" role="navigation" 
+	 >
+	<h3 id="p-personal-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Personal tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="pt-anonuserpage" class="mw-list-item"><span>Not logged in</span></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n"><span>Talk</span></a></li><li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y"><span>Contributions</span></a></li><li id="pt-createaccount" class="mw-list-item"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Reflective+programming" title="You are encouraged to create an account and log in; however, it is not mandatory"><span>Create account</span></a></li><li id="pt-login" class="mw-list-item"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Reflective+programming" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o"><span>Log in</span></a></li></ul>
+		
+	</div>
+</nav>
+
+		<div id="left-navigation">
+			<nav id="p-namespaces" class="mw-portlet mw-portlet-namespaces vector-menu vector-menu-tabs" aria-labelledby="p-namespaces-label" role="navigation" 
+	 >
+	<h3 id="p-namespaces-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Namespaces</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-nstab-main" class="selected mw-list-item"><a href="/wiki/Reflective_programming" title="View the content page [c]" accesskey="c"><span>Article</span></a></li><li id="ca-talk" class="mw-list-item"><a href="/wiki/Talk:Reflective_programming" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t"><span>Talk</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-variants" class="mw-portlet mw-portlet-variants emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-variants-label" role="navigation" 
+	 >
+	<input type="checkbox"
+		id="p-variants-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-variants"
+		class="vector-menu-checkbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label" aria-label="Change language variant" class="vector-menu-heading">
+		
+		<span>Variants</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+		</div>
+		<div id="right-navigation">
+			<nav id="p-views" class="mw-portlet mw-portlet-views vector-menu vector-menu-tabs" aria-labelledby="p-views-label" role="navigation" 
+	 >
+	<h3 id="p-views-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Views</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="ca-view" class="selected mw-list-item"><a href="/wiki/Reflective_programming"><span>Read</span></a></li><li id="ca-edit" class="mw-list-item"><a href="/w/index.php?title=Reflective_programming&amp;action=edit" title="Edit this page [e]" accesskey="e"><span>Edit</span></a></li><li id="ca-history" class="mw-list-item"><a href="/w/index.php?title=Reflective_programming&amp;action=history" title="Past revisions of this page [h]" accesskey="h"><span>View history</span></a></li></ul>
+		
+	</div>
+</nav>
+
+			<nav id="p-cactions" class="mw-portlet mw-portlet-cactions emptyPortlet vector-menu-dropdown-noicon vector-menu vector-menu-dropdown" aria-labelledby="p-cactions-label" role="navigation"  title="More options"
+	 >
+	<input type="checkbox"
+		id="p-cactions-checkbox"
+		role="button"
+		aria-haspopup="true"
+		data-event-name="ui.dropdown-p-cactions"
+		class="vector-menu-checkbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label" aria-label="" class="vector-menu-heading">
+		
+		<span>More</span>
+			<span class="vector-menu-checkbox-expanded">expanded</span>
+			<span class="vector-menu-checkbox-collapsed">collapsed</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"></ul>
+		
+	</div>
+</nav>
+
+			<div id="p-search" role="search" class=" vector-search-box">
+	<div>
+			<h3 >
+				<label for="searchInput">Search</label>
+			</h3>
+		<form action="/w/index.php" id="searchform"
+			class="vector-search-box-form">
+			<div id="simpleSearch"
+				class="vector-search-box-inner"
+				 data-search-loc="header-navigation">
+				<input class="vector-search-box-input"
+					 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="sentences" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+				/>
+				<input type="hidden" name="title" value="Special:Search"/>
+				<input id="mw-searchButton"
+					 class="searchButton mw-fallbackSearchButton" type="submit" name="fulltext" title="Search Wikipedia for this text" value="Search" />
+				<input id="searchButton"
+					 class="searchButton" type="submit" name="go" title="Go to a page with this exact name if it exists" value="Go" />
+			</div>
+		</form>
+	</div>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a class="mw-wiki-logo" href="/wiki/Main_Page"
+			title="Visit the main page"></a>
+	</div>
+	<nav id="p-navigation" class="mw-portlet mw-portlet-navigation vector-menu vector-menu-portal portal" aria-labelledby="p-navigation-label" role="navigation" 
+	 >
+	<h3 id="p-navigation-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Navigation</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us by donating to the Wikimedia Foundation"><span>Donate</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-interaction" class="mw-portlet mw-portlet-interaction vector-menu vector-menu-portal portal" aria-labelledby="p-interaction-label" role="navigation" 
+	 >
+	<h3 id="p-interaction-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Contribute</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-tb" class="mw-portlet mw-portlet-tb vector-menu vector-menu-portal portal" aria-labelledby="p-tb-label" role="navigation" 
+	 >
+	<h3 id="p-tb-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Tools</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Reflective_programming" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Reflective_programming" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Reflective_programming&amp;oldid=1053653034" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Reflective_programming&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Reflective_programming&amp;id=1053653034&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-wikibase" class="mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1056451" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li></ul>
+		
+	</div>
+</nav>
+<nav id="p-coll-print_export" class="mw-portlet mw-portlet-coll-print_export vector-menu vector-menu-portal portal" aria-labelledby="p-coll-print_export-label" role="navigation" 
+	 >
+	<h3 id="p-coll-print_export-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Print/export</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Reflective_programming&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="/w/index.php?title=Reflective_programming&amp;printable=yes" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li></ul>
+		
+	</div>
+</nav>
+
+	<nav id="p-lang" class="mw-portlet mw-portlet-lang vector-menu vector-menu-portal portal" aria-labelledby="p-lang-label" role="navigation" 
+	 >
+	<h3 id="p-lang-label" aria-label="" class="vector-menu-heading">
+		
+		<span>Languages</span>
+	</h3>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list"><li class="interlanguage-link interwiki-ar mw-list-item"><a href="https://ar.wikipedia.org/wiki/%D8%A7%D9%86%D8%B9%D9%83%D8%A7%D8%B3_(%D8%A8%D8%B1%D9%85%D8%AC%D8%A9)" title="انعكاس (برمجة) – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target"><span>العربية</span></a></li><li class="interlanguage-link interwiki-az mw-list-item"><a href="https://az.wikipedia.org/wiki/Refleksiya" title="Refleksiya – Azerbaijani" lang="az" hreflang="az" class="interlanguage-link-target"><span>Azərbaycanca</span></a></li><li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/Reflexi%C3%B3_(inform%C3%A0tica)" title="Reflexió (informàtica) – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-cs mw-list-item"><a href="https://cs.wikipedia.org/wiki/Reflexe_(programov%C3%A1n%C3%AD)" title="Reflexe (programování) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target"><span>Čeština</span></a></li><li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Reflexion_(Programmierung)" title="Reflexion (Programmierung) – German" lang="de" hreflang="de" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-el mw-list-item"><a href="https://el.wikipedia.org/wiki/%CE%91%CE%BD%CE%AC%CE%BA%CE%BB%CE%B1%CF%83%CE%B7_(%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AD%CF%82)" title="Ανάκλαση (υπολογιστές) – Greek" lang="el" hreflang="el" class="interlanguage-link-target"><span>Ελληνικά</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Reflexi%C3%B3n_(inform%C3%A1tica)" title="Reflexión (informática) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%E2%80%8C%D9%86%D9%88%DB%8C%D8%B3%DB%8C_%D9%BE%DA%98%D9%88%D8%A7%DA%A9%DB%8C" title="برنامه‌نویسی پژواکی – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/R%C3%A9flexion_(informatique)" title="Réflexion (informatique) – French" lang="fr" hreflang="fr" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-ko mw-list-item"><a href="https://ko.wikipedia.org/wiki/%EB%B0%98%EC%98%81_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)" title="반영 (컴퓨터 과학) – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target"><span>한국어</span></a></li><li class="interlanguage-link interwiki-it mw-list-item"><a href="https://it.wikipedia.org/wiki/Riflessione_(informatica)" title="Riflessione (informatica) – Italian" lang="it" hreflang="it" class="interlanguage-link-target"><span>Italiano</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/Reflection_(%D7%AA%D7%9B%D7%A0%D7%95%D7%AA)" title="Reflection (תכנות) – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-lt mw-list-item"><a href="https://lt.wikipedia.org/wiki/Refleksija_(programavimas)" title="Refleksija (programavimas) – Lithuanian" lang="lt" hreflang="lt" class="interlanguage-link-target"><span>Lietuvių</span></a></li><li class="interlanguage-link interwiki-ml mw-list-item"><a href="https://ml.wikipedia.org/wiki/%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B4%A4%E0%B4%BF%E0%B4%AB%E0%B4%B2%E0%B4%A8%E0%B4%82_(%E0%B4%95%E0%B4%AE%E0%B5%8D%E0%B4%AA%E0%B5%8D%E0%B4%AF%E0%B5%82%E0%B4%9F%E0%B5%8D%E0%B4%9F%E0%B5%BC_%E0%B4%AA%E0%B5%8D%E0%B4%B0%E0%B5%8B%E0%B4%97%E0%B5%8D%E0%B4%B0%E0%B4%BE%E0%B4%AE%E0%B4%BF%E0%B4%99%E0%B5%8D)" title="പ്രതിഫലനം (കമ്പ്യൂട്ടർ പ്രോഗ്രാമിങ്) – Malayalam" lang="ml" hreflang="ml" class="interlanguage-link-target"><span>മലയാളം</span></a></li><li class="interlanguage-link interwiki-ms mw-list-item"><a href="https://ms.wikipedia.org/wiki/Pantulan_(pengaturcaraan_komputer)" title="Pantulan (pengaturcaraan komputer) – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target"><span>Bahasa Melayu</span></a></li><li class="interlanguage-link interwiki-nl mw-list-item"><a href="https://nl.wikipedia.org/wiki/Reflectie_(informatica)" title="Reflectie (informatica) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target"><span>Nederlands</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/%E3%83%AA%E3%83%95%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3_(%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6)" title="リフレクション (情報工学) – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target"><span>日本語</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Mechanizm_refleksji" title="Mechanizm refleksji – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-pt mw-list-item"><a href="https://pt.wikipedia.org/wiki/Reflex%C3%A3o_(programa%C3%A7%C3%A3o)" title="Reflexão (programação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target"><span>Português</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9E%D1%82%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)" title="Отражение (программирование) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target"><span>Русский</span></a></li><li class="interlanguage-link interwiki-sl mw-list-item"><a href="https://sl.wikipedia.org/wiki/Refleksija_(ra%C4%8Dunalni%C5%A1tvo)" title="Refleksija (računalništvo) – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target"><span>Slovenščina</span></a></li><li class="interlanguage-link interwiki-sr mw-list-item"><a href="https://sr.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%BB%D0%B5%D0%BA%D1%81%D0%B8%D1%98%D0%B0_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D1%9A%D0%B5)" title="Рефлексија (програмирање) – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target"><span>Српски / srpski</span></a></li><li class="interlanguage-link interwiki-uk mw-list-item"><a href="https://uk.wikipedia.org/wiki/%D0%A0%D0%B5%D1%84%D0%BB%D0%B5%D0%BA%D1%81%D1%96%D1%8F_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" title="Рефлексія (програмування) – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target"><span>Українська</span></a></li><li class="interlanguage-link interwiki-vi mw-list-item"><a href="https://vi.wikipedia.org/wiki/Reflection_(khoa_h%E1%BB%8Dc_m%C3%A1y_t%C3%ADnh)" title="Reflection (khoa học máy tính) – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target"><span>Tiếng Việt</span></a></li><li class="interlanguage-link interwiki-zh mw-list-item"><a href="https://zh.wikipedia.org/wiki/%E5%8F%8D%E5%B0%84%E5%BC%8F%E7%BC%96%E7%A8%8B" title="反射式编程 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target"><span>中文</span></a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q1056451#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</nav>
+
+</div>
+
+</div>
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 5 November 2021, at 05:33<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Reflective_programming&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"/></a></li>
+</ul>
+
+</footer>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.529","walltime":"1.895","ppvisitednodes":{"value":1653,"limit":1000000},"postexpandincludesize":{"value":46370,"limit":2097152},"templateargumentsize":{"value":2489,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":45988,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00% 1770.620      1 -total","  8.83%  156.379      1 Template:Reflist","  6.08%  107.635      1 Template:Citation","  4.42%   78.180      1 Template:Programming_paradigms","  4.30%   76.218      2 Template:Citation_needed","  4.23%   74.918      1 Template:Sidebar","  3.51%   62.140      2 Template:ISBN","  3.37%   59.696      2 Template:Fix","  2.73%   48.412      1 Template:Distinguish","  1.97%   34.815      4 Template:Category_handler"]},"scribunto":{"limitreport-timeusage":{"value":"0.239","limit":"10.000"},"limitreport-memusage":{"value":4804916,"limit":52428800}},"cachereport":{"origin":"mw1328","timestamp":"20211118204054","ttl":1814400,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Reflective programming","url":"https:\/\/en.wikipedia.org\/wiki\/Reflective_programming","sameAs":"http:\/\/www.wikidata.org\/entity\/Q1056451","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q1056451","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-09-09T16:27:50Z","dateModified":"2021-11-05T05:33:26Z","headline":"ability of a process to examine and modify itself"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":180,"wgHostname":"mw1451"});});</script>
+</body></html>
