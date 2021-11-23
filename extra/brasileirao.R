@@ -41,9 +41,13 @@ tabela_tidy <- function(tabela){
       # pegando o time
       time = str_squish(time) %>% str_sub(3) %>% str_squish(),
       # texto para numero
-      across(pts:ca, readr::parse_number)
+      across(pts:ca, readr::parse_number),
     ) %>% 
-    purrr::set_names(new_names)
+    purrr::set_names(new_names) %>% 
+    dplyr::mutate(
+      
+      aproveitamento = as.integer(aproveitamento) / 100
+    )
 }
 
 
@@ -54,4 +58,12 @@ aplicacao <- function(){
     tabela_tidy()
 }
 
-aplicacao()
+aplicacao() -> da
+
+da %>% 
+  group_by(carta_amarelo) %>% 
+  summarise(media_aproveitamento = mean(aproveitamento)) %>% 
+  arrange(-media_aproveitamento) %>% 
+  ggplot(aes(carta_amarelo, media_aproveitamento)) +
+  geom_point() +
+  geom_smooth(method = "lm")
