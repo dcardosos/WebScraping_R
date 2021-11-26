@@ -3,7 +3,8 @@ library(lubridate)
 library(tidytext)
 library(future)
 library(furrr)
-library()
+library(wordcloud2)
+library(xml2)
 # baixar pagina 
 
 baixa_pag <- function(tx_texto, current_page = 1, dt_inicio = today() - 100, dt_fim = today()){
@@ -36,6 +37,8 @@ baixa_pag <- function(tx_texto, current_page = 1, dt_inicio = today() - 100, dt_
   r_discurso
 }
 
+
+# texto -------------------------------------------------------------------
 get_url_texto <- function(r_html){
   
   # retorna urls dos textos
@@ -94,12 +97,23 @@ maybe_get_texto_progress <- function(u_texto){
 
 # tabela ------------------------------------------------------------------
 
+num_pag <- function(r_html){
+  r_html %>% 
+    xml2::read_html() %>% 
+    xml2::xml_find_first('//*[@id="content"]/div/span[3]') %>% 
+    xml2::xml_text() %>% 
+    # str_replace("[.]", "") %>% 
+    # as.integer + 1 %/% 50 aquiiiiiiiiiiiiiiiiiiiii
+    
+}
+
+
 get_tabela <- function(r_html){
   
   r_html %>% 
     xml2::read_html() %>% 
     xml2::xml_find_first('//*[@id="content"]/div/table') %>% 
-    rvest::html_table()
+    rvest::html_table() 
 }
 
 tabela_tidy <- function(tab, txt){
@@ -118,15 +132,30 @@ tabela_tidy <- function(tab, txt){
         .cols = c(data, data_publicacao),
         .fns = lubridate::dmy
       ),
-      texto = txt 
-    )
+      discurso = txt 
+    ) %>% 
+    select(-sumario)
 
 }
 
 # aplicacao ---------------------------------------------------------------
+primeiros_50 <- baixa_pag("pandemia")
 
-pagina <- baixa_pag('maconha') 
-
+future::plan(multisession)
+progressr::with_progress({ 
+  
+  p <- progressr::progressor(num_pag(primeiros_50))
+  
+  pages <- 
+    furrr::future_map(seq(2, num_pag(primeiros_50)), ~{
+      p()
+      baixa_pag("pandemia", .x) 
+    })
+  
+  })
+pagina <- purrr::map(.x = seq(2, num_pag),
+                     .f = ~ baixa_pag("pandemia", current_page = .x))
+  
 textos <- 
   pagina %>% 
   get_url_texto() %>% 
@@ -136,7 +165,14 @@ tab <-
   pagina %>% 
   get_tabela() %>% 
   tabela_tidy(textos)
+# 
+# ex %>%
+#   str_remove("(?<=[AO]).*?(?=[)])")
+# ex %>% 
+#   str_remove("(?<=DISCURSO).*?(?=[.])") %>% 
+#   str_remove("DISCURSO.")
 
+tab
 
 # worcloud ----------------------------------------------------------------
 
